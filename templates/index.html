@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Números Aleatórios</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="num1">Digite o primeiro número:</label><br>
+        <input type="number" id="num1" name="num1"><br>
+        <label for="num2">Digite o segundo número:</label><br>
+        <input type="number" id="num2" name="num2"><br>
+        <input type="submit" value="Gerar">
+    </form>
+    {% if numero_aleatorio %}
+    <p>O número gerado é: {{ numero_aleatorio }}</p>
+    {% endif %}
+</body>
+</html>
+
